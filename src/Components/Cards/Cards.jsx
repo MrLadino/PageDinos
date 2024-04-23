@@ -6,9 +6,9 @@ const Cards = () => {
     <div>
       {Imagenes.map((imagen) => (
         <div key={imagen.id}>
-          <img src={imagen.img} alt={imagen.description} />
-          <h2>{imagen.date}</h2>
-          <p>{imagen.description}</p>
+          <h2 className='text-white text-2xl p-5'>{imagen.dinoName}</h2>
+          <img className='w-7/12 h-60 p-5' src={imagen.img} alt={imagen.description} />
+          <p className='text-white p-5'>{imagen.description}</p>
         </div>
       ))}
     </div>
